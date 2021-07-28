@@ -1,6 +1,6 @@
 import React from "react";
 
-const IconDashboard = () => {
+const IconDashboardWhite = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ const IconDashboard = () => {
       viewBox="0 0 14 15"
     >
       <g fill="none" fill-rule="evenodd">
-        <g stroke="#3179EE" stroke-width="2">
+        <g stroke="#FFF" stroke-width="2">
           <path d="M1 1H6V7H1z" />
           <path
             d="M9 8H13V14H9z"
@@ -26,4 +26,4 @@ const IconDashboard = () => {
   );
 };
 
-export default IconDashboard;
+export default IconDashboardWhite;

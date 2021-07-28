@@ -21,9 +21,11 @@ const WrapperContent = styled.div`
 
 const DashboardContent = styled.div`
   height: auto;
-  overflow: hidden;
+
   /* position: relative; */
   width: 100%;
+  margin-top: 64px;
+  padding-left: 16px;
 `;
 
 const Layout = () => {

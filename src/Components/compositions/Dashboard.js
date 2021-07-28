@@ -2,10 +2,12 @@ import React from "react";
 
 import styled from "styled-components";
 
+import BgDashboard from "../components/info/BgDashboard";
+
 const Wrapper = styled.div`
-  height: auto;
+  height: 100vh;
   width: 100%;
-  overflow-y: auto;
+  overflow: auto;
 `;
 
 const Main = styled.main`
@@ -27,12 +29,15 @@ const Dashboard = ({ children }) => {
   return (
     <Wrapper>
       <Main>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
+        <BgDashboard></BgDashboard>
       </Main>
     </Wrapper>
   );
