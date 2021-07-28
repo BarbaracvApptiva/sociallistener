@@ -1,4 +1,4 @@
-const defaultColors = {
+export const colors = {
   primary: "#3179ee",
   project1: "#12c06e",
   project2: "#002db8",
@@ -15,5 +15,3 @@ const defaultColors = {
   positive: "#2cda88",
   negative: "#ff7171",
 };
-
-export const colors = { ...defaultColors };
