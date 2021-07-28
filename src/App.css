@@ -1,38 +1,90 @@
-.App {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+#page-wrap {
   text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #486382;
+  transition: color 0.2s;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Change color on hover */
+.bm-item:hover {
+  color: var(--primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 19px;
+  top: 19px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background-color: #f1f6f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background-color: #f1f6f9;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #f1f6f9;
+
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #486382;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background-color: #f1f6f9;
+}
+
+
+.bm-menu-wrap{
+  position: relative !important;
+  margin-top: 64px;
+  height: calc(100% - 64px) !important;
 }
