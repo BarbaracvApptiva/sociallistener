@@ -5,13 +5,13 @@ import styled from "styled-components";
 import BgDashboard from "../components/info/BgDashboard";
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: auto;
   width: 100%;
   overflow: auto;
 `;
 
 const Main = styled.main`
-  height: 100%;
+  height: 850px;
   width: 100%;
   max-height: 1500px;
   display: grid;
@@ -23,6 +23,7 @@ const Main = styled.main`
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   padding: 16px;
+  overflow: auto;
 `;
 
 const Dashboard = ({ children }) => {

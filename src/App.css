@@ -4,13 +4,17 @@ body {
   padding: 0;
   font-family: 'DM Sans', sans-serif;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #page-wrap {
   text-align: center;
 
   /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
+  overflow: inherit;
 }
 
 /* Individual item */
@@ -65,6 +69,7 @@ body {
   background-color: #f1f6f9;
   padding-top: 24px;
   font-size: 1.15em;
+  overflow: inherit;
 }
 
 /* Morph shape necessary with bubble or elastic */

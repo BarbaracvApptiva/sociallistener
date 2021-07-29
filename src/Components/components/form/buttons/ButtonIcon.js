@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Button = styled.button`
   width: auto;
-  height: 48px;
+  height: 32px;
   padding: 8px;
   cursor: pointer;
   align-items: center;

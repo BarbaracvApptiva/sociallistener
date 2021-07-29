@@ -1,5 +1,5 @@
 import React from "react";
-import { stack as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import IconDashboard from "../icons/IconDashboard";
 import styled from "styled-components";
 
@@ -8,7 +8,6 @@ const MenuItem = styled.a`
   width: 216px;
   padding: 9px 0px 9px 30px;
   color: #486382;
-  height: 21px;
   transition: 0.4s ease-out;
   &:hover {
     background-color: var(--primary);
