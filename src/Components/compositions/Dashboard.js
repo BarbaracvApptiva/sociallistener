@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import BgDashboard from "../components/info/BgDashboard";
+import BgDashboard from '../components/info/BgDashboard'
 
 const Wrapper = styled.div`
   height: auto;
   width: 100%;
   overflow: auto;
-`;
+`
 
 const Main = styled.main`
   height: 850px;
@@ -16,15 +16,12 @@ const Main = styled.main`
   max-height: 1500px;
   display: grid;
   grid-template-columns: repeat(3, calc((100% - 32px) / 3));
-  grid-template-rows: minmax(250px, 30%) minmax(312px, calc(40% - 32px)) minmax(
-      224px,
-      30%
-    );
+  grid-template-rows: minmax(250px, 30%) minmax(312px, calc(40% - 32px)) minmax(224px, 30%);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   padding: 16px;
   overflow: auto;
-`;
+`
 
 const Dashboard = ({ children }) => {
   return (
@@ -41,7 +38,7 @@ const Dashboard = ({ children }) => {
         <BgDashboard></BgDashboard>
       </Main>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard

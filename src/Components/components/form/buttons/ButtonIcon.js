@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Button = styled.button`
   width: auto;
@@ -12,27 +12,27 @@ const Button = styled.button`
   display: flex;
   border: none;
   background: none;
-`;
+`
 const Value = styled.div`
   font-size: 14px;
   font-weight: 500;
   color: #486382;
   margin: 0 7px 0 0;
-`;
+`
 
 const Icon = styled.div`
   height: 8px;
   width: 8px;
   background: red;
-`;
+`
 
-const ButtonIcon = ({ icon, value }) => {
+const ButtonIcon = ({ children, value }) => {
   return (
     <Button>
       <Value>{value}</Value>
-      <Icon>{icon}</Icon>
+      <Icon>{children}</Icon>
     </Button>
-  );
-};
+  )
+}
 
-export default ButtonIcon;
+export default ButtonIcon
