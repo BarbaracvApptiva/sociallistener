@@ -27,7 +27,10 @@ const Dashboard = ({ children }) => {
   return (
     <Wrapper>
       <Main>
-        <BgDashboard></BgDashboard>
+        <BgDashboard toggleActive={true} titleLeft="Mentions" titleRight="Reach">
+          <span>Mentions</span>
+          <span>Reach</span>
+        </BgDashboard>
         <BgDashboard></BgDashboard>
         <BgDashboard></BgDashboard>
         <BgDashboard></BgDashboard>
