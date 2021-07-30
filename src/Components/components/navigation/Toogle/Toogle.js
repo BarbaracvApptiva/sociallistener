@@ -5,14 +5,14 @@ const Container = styled.div`
   // width: 138px;
   // height: 32px;
   // padding: 4px 8px 4px 4px;
-  opacity: 0.2;
   border-radius: 16px;
   box-shadow: inset 1px 1px 7px 0 rgba(0, 0, 0, 0.11);
-  background-color: var(--age-age-1);
+  background-color: #d8e3f5;
   display: flex;
   justify-content: space-between;
   max-width: max-content;
   cursor: pointer;
+  margin-bottom: 16px;
 `
 
 const Item = styled.button`
@@ -21,7 +21,6 @@ const Item = styled.button`
   padding: 3px 8px;
   cursor: pointer;
   outline: none;
-  font-family: DMSans;
   font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
@@ -33,11 +32,16 @@ const Item = styled.button`
     border-radius: 12px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
     }
   }
   &.inactive{
     color: var(--primary);
     border: 0;
+    font-size: 14px;
+  font-weight: 500;
   }
 `
 

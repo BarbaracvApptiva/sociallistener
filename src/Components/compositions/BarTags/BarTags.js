@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 // COMPONENTS
-import Tag from '../components/navigation/Tag'
-import ButtonIcon from '../components/form/buttons/ButtonIcon'
+import Tag from '../../components/navigation/Tag/Tag'
+import ButtonIcon from '../../components/form/buttons/ButtonIcon/ButtonIcon'
 
 // ICONS
-import IconCrossBlue from '../icons/IconCrossBlue'
+import IconCrossBlue from '../../icons/IconCrossBlue'
 
 const Container = styled.div`
   height: 64px;

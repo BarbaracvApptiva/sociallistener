@@ -2,7 +2,11 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-import BgDashboard from '../components/info/BgDashboard'
+// COMPONENTS
+import Mentions from '../Dashboard/Mentions/Mentions'
+import MentionsGraphics from '../Dashboard/MentionsGraphics/MentionsGraphics'
+import BgDashboard from '../../components/info/BgDashboard/BgDashboard'
+import Sentiments from './Sentiments/Sentiments'
 
 const Wrapper = styled.div`
   height: auto;
@@ -28,12 +32,25 @@ const Dashboard = ({ children }) => {
     <Wrapper>
       <Main>
         <BgDashboard toggleActive={true} titleLeft="Mentions" titleRight="Reach">
-          <span>Mentions</span>
-          <span>Reach</span>
+          <span>
+            <MentionsGraphics></MentionsGraphics>
+          </span>
         </BgDashboard>
-        <BgDashboard></BgDashboard>
-        <BgDashboard></BgDashboard>
-        <BgDashboard></BgDashboard>
+
+        <BgDashboard
+          classProps="column__card-mentions"
+          toggleActive={true}
+          titleLeft="Mentions"
+          titleRight="Influencers"
+        >
+          <span>
+            <Mentions></Mentions>
+          </span>
+        </BgDashboard>
+
+        <BgDashboard classProps="column__card-sentiments">
+          <Sentiments />
+        </BgDashboard>
         <BgDashboard></BgDashboard>
         <BgDashboard></BgDashboard>
         <BgDashboard></BgDashboard>

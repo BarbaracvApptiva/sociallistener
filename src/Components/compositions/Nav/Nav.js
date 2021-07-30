@@ -1,7 +1,7 @@
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import IconDashboard from "../icons/IconDashboard";
-import styled from "styled-components";
+import React from 'react'
+import { slide as Menu } from 'react-burger-menu'
+import IconDashboard from '../../icons/IconDashboard'
+import styled from 'styled-components'
 
 const MenuItem = styled.a`
   display: flex;
@@ -13,7 +13,7 @@ const MenuItem = styled.a`
     background-color: var(--primary);
     color: #ffffff;
   }
-`;
+`
 
 const Item = styled.div`
   font-size: 16px;
@@ -21,18 +21,18 @@ const Item = styled.div`
 
   display: flex;
   text-decoration: none;
-`;
+`
 
 const Icon = styled.div`
   width: 14px;
   height: 14px;
   margin-right: 20px;
   object-fit: contain;
-`;
+`
 
 const Nav = () => {
   return (
-    <Menu isOpen={false} width={"216px"} noOverlay disableCloseOnEsc>
+    <Menu isOpen={false} width={'216px'} noOverlay disableCloseOnEsc>
       <MenuItem href="/" className="transition">
         <Item>
           <Icon>
@@ -69,7 +69,7 @@ const Nav = () => {
         </Item>
       </MenuItem>
     </Menu>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

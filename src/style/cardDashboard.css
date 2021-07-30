@@ -1,0 +1,21 @@
+.column__card-mentions {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  height: 100%;
+  background-color: #f1f6f9 !important;
+  padding: 0 !important;
+}
+
+.column__card-mentions:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.column__card-sentiments {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  height: 100%;
+}
+/*# sourceMappingURL=cardDashboard.css.map */
