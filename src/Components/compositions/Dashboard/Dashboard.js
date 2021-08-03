@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 // COMPONENTS
 import Mentions from '../Dashboard/Mentions/Mentions'
+import Influencers from '../Dashboard/Influencers/Influencers'
 import MentionsGraphics from '../Dashboard/MentionsGraphics/MentionsGraphics'
 import BgDashboard from '../../components/info/BgDashboard/BgDashboard'
 import Sentiments from './Sentiments/Sentiments'
@@ -46,14 +47,16 @@ const Dashboard = ({ children }) => {
           <span>
             <Mentions></Mentions>
           </span>
+          <span>
+            <Influencers></Influencers>
+          </span>
         </BgDashboard>
 
         <BgDashboard classProps="column__card-sentiments">
           <Sentiments />
         </BgDashboard>
-        <BgDashboard></BgDashboard>
-        <BgDashboard></BgDashboard>
-        <BgDashboard></BgDashboard>
+        <BgDashboard>ddd</BgDashboard>
+        <BgDashboard>xxxx</BgDashboard>
         <BgDashboard></BgDashboard>
         <BgDashboard></BgDashboard>
       </Main>
