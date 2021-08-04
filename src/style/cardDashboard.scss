@@ -15,3 +15,12 @@
     grid-column-end: 4;
     height: 100%;
 }
+
+
+.bg-blue {
+    background-color: var(--primary) !important;
+
+    p {
+        color: #f1f6f9;
+    }
+}

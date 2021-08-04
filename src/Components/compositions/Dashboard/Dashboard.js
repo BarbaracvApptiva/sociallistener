@@ -8,20 +8,22 @@ import Influencers from '../Dashboard/Influencers/Influencers'
 import MentionsGraphics from '../Dashboard/MentionsGraphics/MentionsGraphics'
 import BgDashboard from '../../components/info/BgDashboard/BgDashboard'
 import Sentiments from './Sentiments/Sentiments'
+import Sources from './Sources-social/Sources'
+import TopicCloud from './TopicCloud/TopicCloud'
 
 const Wrapper = styled.div`
-  height: auto;
+  height: calc(100vh - 128px);
   width: 100%;
   overflow: auto;
+  padding-bottom: 16px;
 `
 
 const Main = styled.main`
-  height: 850px;
   width: 100%;
   max-height: 1500px;
   display: grid;
   grid-template-columns: repeat(3, calc((100% - 32px) / 3));
-  grid-template-rows: minmax(250px, 30%) minmax(312px, calc(40% - 32px)) minmax(224px, 30%);
+  grid-template-rows: minmax(300px, 30%);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   padding: 16px;
@@ -55,10 +57,14 @@ const Dashboard = ({ children }) => {
         <BgDashboard classProps="column__card-sentiments">
           <Sentiments />
         </BgDashboard>
-        <BgDashboard>ddd</BgDashboard>
-        <BgDashboard>xxxx</BgDashboard>
-        <BgDashboard></BgDashboard>
-        <BgDashboard></BgDashboard>
+        <BgDashboard toggleActive={true} titleLeft="Countries" titleRight="Languages"></BgDashboard>
+        <BgDashboard toggleActive={true} titleLeft="Gender" titleRight="Age"></BgDashboard>
+        <BgDashboard>
+          <Sources></Sources>
+        </BgDashboard>
+        <BgDashboard classProps="bg-blue">
+          <TopicCloud></TopicCloud>
+        </BgDashboard>
       </Main>
     </Wrapper>
   )

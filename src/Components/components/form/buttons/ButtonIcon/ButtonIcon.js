@@ -23,7 +23,6 @@ const Value = styled.div`
 const Icon = styled.div`
   height: 8px;
   width: 8px;
-  background: red;
 `
 
 const ButtonIcon = ({ children, value }) => {

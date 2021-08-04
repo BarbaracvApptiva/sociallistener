@@ -70,6 +70,7 @@ body {
   padding-top: 24px;
   font-size: 1.15em;
   overflow: inherit;
+  height: auto  !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
